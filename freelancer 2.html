@@ -1,0 +1,41 @@
+<html>
+<head>
+<title>This is a freelancer contract</title>
+<script language ="javascript">
+function showanswers()
+{
+if(document.getElementById("wallet").value=="xyz")
+{
+document.getElementById("name").value="Texas";
+document.getElementById("proposal").value="To prepare security Software";
+document.getElementById("phases").value="Design, Handle Software";
+document.getElementById("stages").value="handle, accept";
+document.getElementById("design").value="1.5";
+document.getElementById("Handle").value="2";
+}
+else
+{
+alert("no contract is assigned for you");
+}
+}
+</script>
+</head>
+<body background="pr-bg.jpg" style="background-blend-mode: overlay;">
+<h1 align = center  style="font-family:  Cooper Std; font-size: 40px; color: #ff6699; border-color:black; text-shadow: 4px 5px 7px white;-webkit-text-stroke-width: 1px; -webkit-text-stroke-color: black;"> SOLIDITY SAMPLE WEBSITE -BY MOSES AND VIGNESH</H1> <br> <br>
+
+<fieldset>
+<legend style="color: white; font-size:24px;">Contract Details</legend>
+<p style="color: white; font-size:24px;">
+Enter your wallet address to see contract assigned to you: <input type=text required id="wallet"><br><br>
+<button onclick = "showanswers()" style="background-color: lightblue;font-size:18px;">Check </button><br><br>
+<form action="design2.html">
+Company name = <input type="text" id="name" style="font-size:18px;"><br><br>
+Contract proposal = <input type="text" id="proposal" style="font-size:18px;"><br><br>
+Contract phases = <input type="text" id="phases" style="font-size:18px;"><br><br>
+ETH alloted for design phase = <input type="text" id="design" style="font-size:18px;"><br><br>
+ETH alloted for Handle Software = <input type="text" id="Handle" style="font-size:18px;"><br><br>
+Contract stages = <input type="text" id="stages" style="font-size:18px;"><br><br>
+<button style="background-color: lightblue;font-size:18px;"> accept contract </button>
+</form>
+</body>
+</html>

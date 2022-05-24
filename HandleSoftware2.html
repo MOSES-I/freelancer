@@ -1,0 +1,62 @@
+<html>
+<head>
+<script language="javascript">
+i=0;
+
+function accept()
+{
+if(document.getElementById("status").value=="Your file is accepted. Now you can continue...")
+{
+alert("Your file is accepted. You got 2 ETH.");
+}
+else
+{
+alert("Wait until the contracter accept your project");
+}
+}
+function handle()
+{
+alert("Your file was handled successfully.......");
+}
+function status()
+{
+document.getElementById("status").value="Your file is accepted. Now you can continue...";
+}
+j=0;
+function hello()
+{
+if(j==0)
+{
+j=1;
+alert("Till the contracter accept it, you cannot close it");
+}
+else
+{
+t= confirm("Do you want to close the contract");
+if(t==true)
+{
+document.write("Thanks for using");
+}      
+}
+}
+</script>
+</head>
+<body background="pr-bg.jpg" style="background-blend-mode: overlay;">
+<h1 align = center  style="font-family:  Cooper Std; font-size: 40px; color: #ff6699; border-color:black; text-shadow: 4px 5px 7px white;-webkit-text-stroke-width: 1px; -webkit-text-stroke-color: black;">SOFTWARE HANDLING PHASE </h1>
+<hr><br><br>
+<fieldset>
+<legend style="color: white; font-size:24px;">handle</legend>
+<p style="color: white; font-size:24px;">
+Give your file here <input type="file"> <br><br>
+<button onclick="handle()" style="background-color: lightblue;font-size:15px; ">Handle file </button>
+</fieldset>
+<fieldset>
+<legend style="color: white; font-size:24px;">accept</legend>
+<p style="color: white; font-size:24px;">
+status: <input type="text" id="status"> <br><br>
+<button onclick="status()" style="background-color: lightblue;font-size:15px; ">check status</button><br><br>
+<button onclick="accept()" style="background-color: lightblue;font-size:15px; ">Credit</button><br><br>
+<button onclick="hello()" style="background-color: lightblue;font-size:15px; ">Close the contract </button>
+</fieldset>
+</body>
+</html>
